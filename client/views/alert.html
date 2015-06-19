@@ -1,0 +1,15 @@
+<template name="popupAlert">
+  <aside class="popup-overlay">
+    <section class="alert">
+      <header>
+        <h4>{{title}}</h4>
+      </header>
+      {{#if message}}
+        <p>{{message}}</p>
+      {{/if}}
+      <div class="controls">
+        <button class="btn-confirm">{{buttonText}}</button>
+      </div>
+    </section>
+  </aside>
+</template>

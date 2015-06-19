@@ -1,0 +1,16 @@
+<template name="popupConfirm">
+  <aside class="popup-overlay">
+    <section class="confirm">
+      <header>
+        <h4>{{title}}</h4>
+      </header>
+      {{#if message}}
+        <p>{{message}}</p>
+      {{/if}}
+      <div class="controls">
+        <button class="btn-confirm">{{confirmButtonText}}</button>
+        <button class="btn-cancel">{{cancelButtonText}}</button>
+      </div>
+    </section>
+  </aside>
+</template>
